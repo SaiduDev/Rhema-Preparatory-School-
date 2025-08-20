@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: purple;
+    color: white;
+}
+nav{
+    height: 100px;
+background-color: purple;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+nav h1{
+    margin-left: 20px;
+    flex: 1;
+    color: white;
+    font-size: 20px;
+}
+@media (max-width: 768px){
+    nav{
+        flex-direction: column;
+      padding-top: 30px;
+      
+    }
+    nav h1{
+       padding-top: 10px;
+    }
+    
+}
+.navbar{
+    padding: 14px 16px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+}
+nav a:hover{
+    box-shadow: -3px 2px 5px white, 0px 5px 5px white;
+}
+.intro-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    margin: 20px;
+    
+}
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+    
+   
+
+.img{
+    flex: 1;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    flex: 1;
+    box-shadow: -3px 2px 5px white, 0px 5px 5px white;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+   
+   
+}
+
+
+@media(max-width: 768px){
+    .intro-sec{
+        height: 150%
+    }
+    .intro{
+        flex-direction: column;
+     
+    }
+    .text div{
+        padding: 22px;
+        width: 380px;
+        
+    }
+    .text{
+        width: 420px;
+        box-shadow: -3px 2px 5px black, 0px 5px 5px black;
+    }
+    .intro .img{
+        width: 250px;
+    }
+    .intro .img img{
+        width: 250px;
+        height: 250px;
+        box-shadow: -3px 2px 5px black, 0px 5px 5px black;
+    }
+    
+
+}
+.text button{
+    text-align: center;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    background: linear-gradient(white, purple);
+    box-shadow: -3px 2px 5px white, 0px 5px 5px white;
+    margin-left: 180px;
+    margin-top: 30px;
+    transition: 1s width;
+
+    
+}
+button:hover{
+    
+    width: 180px;
+}
+.text button a{
+    text-decoration: none;
+    color: rgb(34, 4, 34);
+    font-size: 20px;
+}
+
+.img img{
+    width: 500px;
+    height: 450px;
+    border-radius: 50%;
+    border: 2px solid grey;
+    box-shadow: -3px 10px 5px white, 4px 10px 10px white;
+}
+.service-sec{
+  
+    background-color: white;
+    border: 3px solid purple;
+}
+.service-sec h2{
+    height: 100px;
+    background-color: white;
+    color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid purple;
+    border-right: 3px solid purple;
+    border-bottom: 3px solid purple;
+    border-top: 3px solid purple;
+    margin-top: 20px;
+}
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+.service{
+    height: 400px;
+    width: 300px;
+    border: 2px solid purple;
+    margin: 20px;
+    text-align: center;
+    background-color: purple;
+    color: white;
+    box-shadow: -2px 5px 5px grey, 0px 10px 10px grey;
+    transition: 1s width;
+    transition: 1s height;
+}
+@keyframes anime{
+    0%{
+
+    }
+    50%{
+        height: 450px;
+        border-radius: 50%;
+        left: 200px;
+    }
+    100%{
+        
+        transform: rotate(360deg);
+
+    }
+}
+.service:hover{
+    
+    width: 350px;
+    height: 420px;
+}
+.service img{
+    width: 100%;
+    height: 220px;
+
+}
+@media (max-width: 768px){
+    .services{
+        flex-direction: column;
+        height: 120%;
+    }
+   
+}
+.con-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+  
+    box-shadow: 0px 2px 5px white, 2px 10px 10px white;
+}
+.contact{
+    text-align: center;
+    background-color: white;
+    height: 500px;
+    width: 1000px;
+    border-radius: 20px;
+}
+#inp{
+    height: 170px;
+    width: 70%;
+    border-radius: 20px;
+    margin: 10px;
+}
+label{
+    float: left;
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: black;
+}
+.contact p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.contact button{
+    height: 40px;
+    width: 120px;
+    border-radius: 30px;
+    background-color: purple;
+    font-size: 18px;
+    cursor: pointer;
+}
+.contact button:hover{
+    background-color: white;
+    color: purple;
+    width: 130px;
+}
+footer{
+    height: 100px;
+  margin-top: 30px;
+}
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    box-shadow: -2px 4px 7px grey, 0px 10px 10px grey;
+    
+}
+.foot p{
+    flex: 1;
+    color: white;
+    margin-left: 30px;
+}
+.foot div{
+    flex: 1;
+    color: white;
+    margin-left: 30px;
+}
+.foot a{
+    color: white;
+    font-size: 20px;
+}
+footer P{
+    text-align: center;
+    
+}
+.academic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    
+}
+.academic div{
+    width: 350px;
+    margin: 30px;
+    height: 300px;
+    text-align: center;
+}
+.academic div img{
+    height: 300px;
+    width: 350px;
+    border-radius: 20px;
+    
+}
+.ach-sec{
+    height: 700px;
+    background-color: white;
+    border: 3px solid purple;
+}
+.ach-sec h2{
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: purple;
+}
+@media (max-width: 768px){
+    .academic{
+        flex-direction: column;
+        height: 130%;
+    }
+    .ach-sec{
+        height: 130%;
+    }
+}
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    background: light blue;
+    border-radius: 10px;
+    padding: 30px 36px;
+    box-shadow:-4px 4px 5px white, 0px 10px 10px white;
+
+}
+h1,
+h2,
+h3 {
+    color: black;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+.grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.grid>div,
+.grid>section {
+    flex: 1 1 220px;
+    min-width: 220px;
+    background: dity maroon;
+    padding: 18px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+.container img{
+    width: 510px;
+    height: 520px;
+}
+@media(max-width: 768px){
+    .container .img1{
+        width:300px;
+    }
+}
+.container .img2{
+    width: 100%;
+    height: 200px;
+
+}
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+@media(max-width: 768px){
+    .container img{
+        width: 350px;
+        height: 320px;
+    }
+    .container{
+        max-width: 760px;
+
+
+    }
+}
+.container2 {
+    max-width: 1100px;
+    margin: 30px auto;
+    background: light blue;
+    border-radius: 10px;
+    padding: 30px 36px;
+    box-shadow:-4px 4px 5px white, 0px 10px 10px white;
+   
+}
+.container2 img{
+    width: 300px;
+    height: 300px;
+}
+.map-container {
+    width: 100%;
+    height: 400px;
+    margin: 15px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.10);
+}
+img:hover{
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    
+}
+.about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
